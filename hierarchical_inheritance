@@ -1,0 +1,71 @@
+package com.sample;
+
+class animal{
+
+	String name;
+
+	boolean eats_grass;
+
+}
+
+class cat extends animal{
+
+	String bark;
+
+}
+
+class dog extends animal{
+
+	String bark;
+
+}
+
+class cow extends animal{
+
+	String shout;
+
+}
+
+public class Hierarchical {
+
+    public static void main(String[]args) {
+
+    	animal a= new animal();
+
+    	cat c=new cat();
+
+    	dog d=new dog();
+
+    	cow w=new cow();
+
+    	a.name="it can be any animal among cat, dog, cow";
+
+    	c.name="cat";
+
+    	c.eats_grass=false;
+
+    	c.bark="no";
+
+    	d.eats_grass=false;
+
+    	d.bark="yes";
+
+    	w.eats_grass=true;
+
+    	w.shout="yes";
+
+    	System.out.println(a.name);
+
+    	System.out.println("animal name is"+c.name+" animal eats grass or not "+c.eats_grass+" whether the animal barks or not"+c.bark);
+
+    	System.out.println("dog eat grass??  "+d.eats_grass);
+
+    	System.out.println("animal name is cow"+"whether cow eats grass??"+w.eats_grass);
+
+    	
+
+    	
+
+    }
+
+}
