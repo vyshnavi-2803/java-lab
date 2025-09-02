@@ -1,0 +1,67 @@
+package com.sample;
+
+class Rbibank{
+
+	public double getRateOfInterest() {
+
+		return 5.0;
+
+	}}
+
+	//overriding
+
+	class SBI extends Rbibank{
+
+		public double getRateOfInterest() {
+
+			return 6.5;
+
+		}}
+
+		class ICICI extends Rbibank{
+
+			//overriding
+
+			public double getRateOfInterest() {
+
+				return 7.5;
+
+		}
+
+	}
+
+public class Bank {
+
+
+
+	public static void main(String[] args) {
+
+		Rbibank r=new Rbibank();
+
+		Rbibank rb1=new SBI();//upcasting
+
+		SBI s=new SBI();
+
+		ICICI ic=new ICICI();
+
+		System.out.println("RBI Rate Of Interest"+r.getRateOfInterest());
+
+		r.getRateOfInterest();
+
+		System.out.println("SBI Rate Of Interest"+s.getRateOfInterest());
+
+		s.getRateOfInterest();
+
+		System.out.println("ICICI Rate Of Interest"+ic.getRateOfInterest());
+
+		ic.getRateOfInterest();
+
+		System.out.println("new sbi Rate Of Interest"+rb1.getRateOfInterest());
+
+
+
+	}
+
+
+
+}
