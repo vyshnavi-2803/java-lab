@@ -1,0 +1,66 @@
+package com.sample;
+
+class head{
+
+	String name;
+
+	public void data() {
+
+		System.out.println("take care of company");
+
+	}
+
+}
+
+class manager extends head{
+
+	int id;
+
+}
+
+class employee extends manager{
+
+	String position;
+
+}
+
+
+
+public class Multi_inheritance {
+
+
+
+	public static void main(String[] args) {
+
+		head h=new head();
+
+		manager m=new manager();
+
+		employee e=new employee();
+
+		h.name="Ratan Tata";
+
+		m.name="monica bellucci";
+
+		m.id=5678;
+
+		e.name="vyshnavi";
+
+		e.id=234;
+
+		e.position="program executive";
+
+		System.out.println("head name is "+h.name);
+
+		System.out.println("manager name is "+m.name+" managers id is "+m.id);
+
+		System.out.println("employee details are:");
+
+		System.out.println("employee name is "+e.name+" employee id is "+e.id+" employee position is :"+e.position);
+
+	}
+
+
+
+}
+
