@@ -1,0 +1,55 @@
+package com.sample;
+
+class teacher{
+
+	String name;
+
+	int id;
+
+	public void data() {
+
+		System.out.println("this is the parent class");
+
+	}
+
+}
+
+class student extends teacher{
+
+	double marks;
+
+}
+
+public class Single_inheritance {
+
+
+
+	public static void main(String[] args) {
+
+		teacher tchr=new teacher();
+
+		student st=new student();
+
+		tchr.name="sangeetha";
+
+		tchr.id=250;
+
+		st.name="vyshnavi";
+
+		st.id=59;
+
+		st.marks=95.9;
+
+		System.out.println("teacher name is:"+tchr.name+ "teachers id is:" +tchr.id);
+
+		System.out.println("students data is");
+
+		System.out.println("students name is"+st.name+"student id is"+st.id+"students marks in this subject is"+st.marks);
+
+		
+
+	}
+
+
+
+}
