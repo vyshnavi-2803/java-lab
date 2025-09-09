@@ -1,0 +1,76 @@
+package com.sample;
+import java.util.Scanner;
+public class Calculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		
+		
+		while(true) {
+			System.out.println("enter 1 for addition:" );
+			System.out.println("enter 2 for subtraction:" );
+			System.out.println("enter 3 for multiplication:" );
+			System.out.println("enter 4 for division:" );
+			System.out.println("enter 5 for remainder:" );
+			System.out.print("enter the choice");
+					int choice=sc.nextInt();
+			
+		
+		
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		switch(choice){
+		case 1: Addition(a,b);
+		break;
+		
+		case 2:Subtraction(a,b);
+		break;
+		
+		case 3: Multiplication(a,b);
+		break;
+		
+		case 4: Division(a,b);
+		break;
+		
+		case 5: Remainder(a,b);
+		break;
+		
+		default :
+			System.out.println("invalid input!!");
+			
+		}
+		}
+       
+	}
+
+	
+static void Addition(int a,int b) {
+	System.out.println(a+b);
+}
+static void Subtraction(int a,int b) {
+	System.out.println(a-b);
+}
+static void Multiplication(int a,int b) {
+	System.out.println(a*b);
+}
+static void Division(int a,int b) {
+	System.out.println(a/b);
+}
+static void Remainder(int a,int b ) {
+	System.out.println(a%b);
+}
+}
+
+
+
+output:
+enter 1 for addition:
+enter 2 for subtraction:
+enter 3 for multiplication:
+enter 4 for division:
+enter 5 for remainder:
+enter the choice3
+4
+8
+32
